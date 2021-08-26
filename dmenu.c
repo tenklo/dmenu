@@ -956,6 +956,8 @@ main(int argc, char *argv[])
 			colors[SchemeSel][ColFg] = argv[++i];
 		else if (!strcmp(argv[i], "-w"))   /* embedding window id */
 			embed = argv[++i];
+		else if (!strcmp(argv[i], "-i"))   /* do nothing, keepmenu compatability */
+			;
 		else
 			usage();
 
